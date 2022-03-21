@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: beige;
+}
+
+h1 {
+    font-family: "Press Start 2P";
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.pokedex {
+    display: flex;
+}
+
+.base {
+    width: 265px;
+    height: 450px;
+    background-color: rgb(189,15,52);
+    border-radius: 20px;
+    padding: 20px;
+    -webkit-box-shadow: inset 4px -4px 0px 4px rgb(149,24,40); 
+    box-shadow: inset 4px -4px 0px 4px rgb(149,24,40);
+}
+
+.base2 {
+    width: 265px;
+    background-color: rgb(189,15,52);
+    border-radius: 20px;
+    padding: 20px;
+    -webkit-box-shadow: inset 4px -4px 0px 4px rgb(149,24,40); 
+    box-shadow: inset 4px -4px 0px 4px rgb(149,24,40);
+}
+
+label {
+    font-family: "Press Start 2P";
+    font-size: 10px;
+}
+
+#circles {
+    display: flex;
+}
+
+#cirBlanco {
+    height: 60px;
+    width:60px;
+    background: rgb(255,255,255);
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    border-radius:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: inset 1px -1px 0px 1px rgb(154,152,153); 
+    box-shadow: inset 1px -1px 0px 1px rgb(154,152,153);
+}
+
+#circulo1 {
+    height:50px;
+    width:50px;
+    background: rgb(11,205,255);
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    border-radius:50px;
+    -webkit-box-shadow: inset 2px -2px 0px 2px rgb(0,157,212); 
+    box-shadow: inset 2px -2px 0px 2px rgb(0,157,212);
+}
+
+#circulo2 {
+    height:20px;
+    width:20px;
+    background: rgb(239,6,7);
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    border-radius:50px;
+    margin-right: 10px;
+    -webkit-box-shadow: inset 2px -2px 0px 2px rgb(154,4,5); 
+    box-shadow: inset 2px -2px 0px 2px rgb(154,4,5);
+}
+
+#circulo3 {
+    height:20px;
+    width:20px;
+    background: rgb(225,230,20);
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    border-radius:50px;
+    margin-right: 10px;
+    -webkit-box-shadow: inset 2px -2px 0px 2px rgb(127,133,11); 
+    box-shadow: inset 2px -2px 0px 2px rgb(127,133,11);
+}
+
+button {
+    font-family: "Press Start 2P";
+    font-size: 12px;
+    margin-left: 30px;
+    height: 45px;
+    max-width: 8rem;
+    padding: 1.25rem;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(33,100,235);
+    color: white;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 100;
+    cursor: pointer;
+    border: none;
+}
+
+.ImgContainer {
+    background-color: rgb(241,242,211);
+    width: 230px;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-box-shadow: 1px -1px 0px 1px rgb(154,152,153); 
+    box-shadow: 1px -1px 0px 1px rgb(154,152,153);
+}
+
+.pokeImg {
+    background-color: rgb(222,222,222);
+    width: 270px;
+    height: 200px;
+    border-radius: 12px;
+    align-items: center;
+    vertical-align: middle;
+    padding-top: 25px;
+    margin-top: 20px;
+    -webkit-box-shadow: inset 3px -3px 0px 3px rgb(154,152,153); 
+    box-shadow: inset 3px -3px 0px 3px rgb(154,152,153);
+}
+
+#pokeImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: rgb(241,242,211);
+    border-color: black;
+    border: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -15px;
+    display: flex;
+}
+
+#pokeName {
+    margin-top: 5px;
+    height: 30px;
+    font-family: "Press Start 2P";
+    font-size: 12px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(3,45,41);;
+    color: greenyellow;
+}
+
+.ctg {
+    border-radius: 8px;
+    background-color: rgb(3,45,41);
+    padding: 10px;
+}
+
+.ctg-label {
+    color: yellow;
+    font-size: 8px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.ctg-labels {
+    color: yellow;
+    font-size: 8px;
+}
+
+.hab-label {
+    color: yellow;
+    font-size: 8px;
+}
+
+.stat-label {
+    color: yellow;
+    font-size: 8px;
+}
+
+.stats input {
+    width: 40px;
+    background-color: transparent;
+    border-style: none;
+    color: aqua;
+    font-size: 8px;
+    font-family: "Press Start 2P";
+}
+
+.ctg-Poke {
+    border-style: none;
+    background-color: transparent;
+    font-size: 8px;
+    font-family: "Press Start 2P";
+    color: aqua;
+    width: auto;
+}
+
+.hab-Poke {
+    border-style: none;
+    background-color: transparent;
+    font-size: 8px;
+    font-family: "Press Start 2P";
+    color: aqua;
+    width: auto;
+}
+
+.ctg-input {
+    width: 50px;
+    height: 25px;
+    border-radius: 8px;
+    background-color: rgb(3,45,41);
+    border-style: none;
+    color: aqua;
+    font-size: 8px;
+    margin-right: 10px;
+    font-family: "Press Start 2P";
+    text-align: center;
+}
+
+.alt-pe-input {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.div-azul {
+    width: 265px;
+    height: 90px;
+    margin-top: 25px;
+    border-radius: 8px;
+    background-color: rgb(49,167,241);
+    -webkit-box-shadow: inset 2px -2px 0px 2px rgb(25,105,245); 
+    box-shadow: inset 2px -2px 0px 2px rgb(25,105,245);
+}
+
+.barras {
+    width: 130px;
+    height: 15px;
+    display: flex;
+    margin-top: 5px;
+    margin-left: 140px;
+}
+
+.barra-2 {
+    width: 60px;
+    height: 10px;
+    background-color: rgb(49,49,49);
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.div-blanca {
+    width: 80px;
+    height: 40px;
+    margin-top: 2px;
+    border-radius: 8px;
+    background-color: rgb(222,222,222);
+    -webkit-box-shadow: inset 2px -2px 0px 2px rgb(107,107,115); 
+    box-shadow: inset 2px -2px 0px 2px rgb(107,107,115);
+}
+
+.bola-amarilla {
+    margin-left: 150px;
+    margin-top: 15px;
+    height:25px;
+    width:25px;
+    background: rgb(225,230,20);
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    border-radius:50px;
+    margin-right: 10px;
+    -webkit-box-shadow: inset 2px -2px 0px 2px rgb(127,133,11); 
+    box-shadow: inset 2px -2px 0px 2px rgb(127,133,11);
+}
+
+.div-amarilla {
+    display: flex;
+}
+
+.mov {
+    padding: 5px;
+}
+
+.label-mov {
+    font-family: "Press Start 2P";
+    font-size: 8px;
+    color: black;
+}
+
+.input-mov {
+    font-family: "Press Start 2P";
+    font-size: 8px;
+    color: black;
+    border-style: none;
+    background-color: transparent;
+    height: 15px;
+}
+
+.busqueda {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-moves {
+    margin-left: 20px;
+}
+
+textarea {
+    padding: 10px;
+    font-family: "Press Start 2P";
+    font-size: 11px;
+    height: 600px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(3,45,41);;
+    color: greenyellow;
+}
+
+.circle-black {
+    margin-top: 10px;
+    height:45px;
+    width:45px;
+    background: rgb(34,34,34);
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    border-radius:50px;
+    margin-right: 10px;
+    -webkit-box-shadow: inset 2px -2px 0px 2px rgb(4,4,4); 
+    box-shadow: inset 2px -2px 0px 2px rgb(4,4,4);
+}
+
+.rec-green {
+    margin-top: -30px;
+    margin-left: 50px;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(85,171,98);
+    border-radius: 5px;
+}
+
+.cruz img{
+    margin-left: 150px;
+    margin-top: -40px;
+    width: 100px;
+}
