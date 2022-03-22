@@ -11,9 +11,9 @@ const fetchPokemon = () => {
         } 
     }).then((data) => {
         console.log(data);
+        limpiarInputs("pokeName");
         numInputsCtg=document.querySelectorAll(`.ctg-Poke`).length;
         numInputsHab=document.querySelectorAll(`.hab-Poke`).length;
-        limpiarInputs("pokeName");
         for (let index = 0; index < numInputsCtg; index++) {
             delInput("ctg-Poke");
         }
@@ -31,6 +31,7 @@ const fetchPokemon = () => {
         var divHab = document.getElementById("habPoke");
         let statPoke = data.stats;
         let movesAll = data.moves;
+        actualizarTextarea("p-move");
         for (let index = 0; index < categoria.length; index++) {
             let ctg=data.types[index].type.name
             var input = document.createElement("input");
@@ -85,7 +86,6 @@ const espPoke = (name,num,alt,pes) => {
             document.querySelector('#nPoke').innerText = '#00'+num;
         }
     }
-    //document.querySelector('#nPoke').innerText = '#'+num;
     document.querySelector('#altura').value = alt/10 + ' m';
     document.querySelector('#peso').value = pes/10 + ' kg';
 }
@@ -99,8 +99,7 @@ const limpiarInputs = (input) => {
     document.getElementById(`${input}`).value = "";
 }
 
-const movPrincipal = (mov1, mov2, mov3) => {
-    document.querySelector('#mov-1').innerText = mov1;
-    document.querySelector('#mov-2').innerText = mov2;
-    document.querySelector('#mov-3').innerText = mov3;
+const actualizarTextarea = (ta) => {
+    console.log("object");
+    document.getElementById(ta).innerHTML=("");
 }
